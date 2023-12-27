@@ -1,14 +1,38 @@
-var n1="10";
-var n2="20";
+console.log("------------------Assignment 03--------------------");
+console.log("====================Step 1=========================");
+var sweety="Sweety";
+var cutie="Cutie";
 
 console.log("Before Swap:");
-console.log("n1=", n1);
-console.log("n2=", n2);
+console.log("Sweety=", sweety);
+console.log("Cutie=", cutie);
 
-var temp= n1;
-n1=n2;
-n2=temp;
+var temp= sweety;
+sweety=cutie;
+cutie=temp;
 
 console.log("After Swap:");
-console.log("n1=", n1);
-console.log("n2=", n2);
+console.log("Sweety=", sweety);
+console.log("Cutie=", cutie);
+
+
+console.log("====================Step 2=========================");
+var num1 = 100;
+var num2 = 200;
+var num3 = 300;
+
+console.log("Before Swap:");
+console.log("num1=", num1);
+console.log("num2=", num2);
+console.log("num3=", num3);
+
+var temp=num1;
+num1=num2;
+num2=num3;
+num3=temp;
+
+console.log("After Swap:");
+console.log("num1=", num1);
+console.log("num2=", num2);
+console.log("num3=", num3);
+
