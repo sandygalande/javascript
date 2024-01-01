@@ -2,14 +2,14 @@
 
 console.log("----------------------Step 1-------------------------")
 function squareOfWordLength(){
-    var givenString= `"JavaScript"`;
-    console.log(`1.1) Given String is= ${givenString}`);
+    var givenString= "JavaScript";
+    console.log(`1.2) Given String is= ${givenString}`);
     var totalChar= givenString.length;
     console.log(`     Length of string is= ${totalChar}`);
     var square =givenString.length * givenString.length;
     console.log(`     Square of string length is= ${square}`);
 
-    var givenString= `"Google Chrome"`;
+    var givenString= "Google Chrome";
     console.log(`1.2) Given String is= ${givenString}`);
     var totalChar= givenString.length;
     console.log(`     Length of String is= ${totalChar}`);
@@ -17,7 +17,7 @@ function squareOfWordLength(){
     console.log(`     Square of string length is= ${square}`);
 
     
-    var givenString= `"Developer Smart"`;
+    var givenString= "Developer Smart";
     console.log(`1.3) Given String is= ${givenString}`);
     var totalChar= givenString.length;
     console.log(`     Length of String is= ${totalChar}`);
@@ -28,7 +28,7 @@ squareOfWordLength()
 
 console.log("----------------------Step 2-------------------------")
 function string(){
-    var givenString= `"I am Angular Developer"`
+    var givenString= "I am Angular Developer";
     console.log(`2) Given String is=${givenString}`);
 
     var totalChar= givenString.length;
