@@ -22,10 +22,10 @@ var lastChar = trimResult.charAt(33);
 console.log(`5) First Character after trim is= ${firstChar}, Last Character after trim is= ${lastChar}`);
 
 var result = trimResult.split(" ");
-console.log(`6) Total words in the string is: ${result.length} `);
+console.log(`6) Total words in the string is= ${result.length} `);
 
 var indexOfgood= trimResult.indexOf('good');
-console.log("7) Index of good is: ", indexOfgood);
+console.log(`7) Index of word "good" is= ${indexOfgood}`);
 
 var result = trimResult.substring(22);
 var result = trimResult.slice(22);
