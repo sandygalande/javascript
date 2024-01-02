@@ -47,19 +47,6 @@ console.log(typeof d); // string to number conversion
 var z = +"sandip";
 console.log(z); // Invalid Operation
 
-var d= Number("101");
-console.log(typeof d);
-
-var p = boolean(10);
-console.log(p);
-
-var s1="200";
-var result= number(s1);
-console.log(typeof result);
-
-var s1="200A";
-var result= number(s1);
-console.log(typeof result);
 
 
 
