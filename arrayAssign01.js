@@ -13,7 +13,6 @@ console.log("\t","Original Array =",fruits_seasonal1);
 fruits_seasonal1.splice(0, 0, "Papaya" )
 console.log("\t",fruits_seasonal1, "\n");
 
-
 console.log(`=> Step 3) Remove "Mango" from the array ===>`);
 const fruits_seasonal2 = ["Banana", "Orange", "Apple", "Mango", "Water Melon"];
 console.log("\t","Original Array =",fruits_seasonal2);
@@ -49,5 +48,3 @@ const fruits_seasonal7 = ["Banana", "Orange", "Apple", "Mango", "Water Melon"];
 console.log("\t","Original Array =",fruits_seasonal7);
 let fruits = fruits_seasonal6.slice(fruits_seasonal7.length-3);
 console.log("\t",fruits);
-
-
