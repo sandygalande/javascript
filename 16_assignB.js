@@ -9,9 +9,6 @@ class Employee {
         this.emp_salary = emp_salary;
         this.emp_company = emp_company;
     }
-    // getDetails(){
-    //     console.log(`ID: ${this.emp_id}, Name: ${this.emp_name}, dept: ${this.emp_dept}, Salary: ${this.emp_salary}, Company: ${this.emp_company}`);
-    //  } 
 }
 const emp_anil = new Employee(22, "Anil", "IT", 50000, "TCS");
 const emp_radha = new Employee(33, "Radha", "HR", 74000, "Wipro");
@@ -22,31 +19,27 @@ const emp_viny = new Employee(88, "Vinayak", "IT", 75000, "TCS");
 const emp_mahi = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 
 
-const arrayEmployees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monika, emp_viny, emp_mahi];
-// for (const element of arrayEmployees) {
-//     element.getDetails();
-// }
+const employees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monika, emp_viny, emp_mahi];
+
 console.log("==================Step 1==================")
-for (const element of arrayEmployees) {
-    if (element.emp_company=='TCS') {   
-        console.log(`Name: ${arrayEmployees.emp_name}`) 
-    }  
-}
+employees.forEach((employee) => {
+    if (employee.emp_company === 'TCS') {
+      console.log(`Name: ${employee.emp_name}, Company: ${employee.emp_company}`);
+    }
+  });
 
 
 console.log("==================Step 2==================")
-for (const element of arrayEmployees) {
-    if (element.emp_dept=='Finance') {
-        element.getDetails(); 
-    } 
-}
+employees.forEach((employee) => {
+    if (employees.emp_dept === 'Finance') {
+      console.log(`Name: ${employee.emp_name}, department: ${employee.emp_dept}`);
+    }
+  });
 
-// console.log("==================Step 3==================")
-// for (const element of arrayEmployees) {
-//     if (element.name.startsWith('R')) {
-//         element.getDetails(); 
-//     } 
-// }
+console.log("==================Step 3==================")
+    if (employee.emp_name.startsWith('R')) {
+        console.log(employees);
+    }
 
 console.log("==================Step 4==================")
 for (const element of arrayEmployees) {
