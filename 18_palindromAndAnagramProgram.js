@@ -2,11 +2,13 @@
 
 // MADAM
 
-const isPalindrome = function(word){
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
 
 }
 const result = isPalindrome("MADAM");
-console.log(`Given word MADAM is Palindrome or not: ${result}`);
+console.log(`Given word MADAM is Palindrome: ${result}`);
 
 
 // ANAGRAM
