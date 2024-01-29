@@ -1,6 +1,4 @@
 
-
-
 class Employee {
     constructor(emp_id, emp_name, emp_dept, emp_salary, emp_company){
         this.emp_id = emp_id;
@@ -76,7 +74,4 @@ const average = arrayEmpsFromIT.reduce((rt, element) => {
     return rt+ element.emp_salary;
 },0) 
 console.log(`Average Salary of employees for IT department : ${average/arrayEmpsFromIT.length}`);
-
-
-
 

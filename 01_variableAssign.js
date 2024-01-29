@@ -31,8 +31,3 @@ console.log("Gender:", gender);
 var isMarried="No";
 console.log("Is Married:", isMarried);
 
-
-
-
-
-

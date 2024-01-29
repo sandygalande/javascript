@@ -1,6 +1,4 @@
 
-
-
 class Employee {
     constructor(emp_id, emp_name, emp_dept, emp_salary, emp_company){
         this.emp_id = emp_id;
@@ -21,7 +19,7 @@ const emp_mahi = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 
 const employees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monika, emp_viny, emp_mahi];
 
-console.log("==================Step 1==================")
+console.log("<==================Step 1==================>")
 employees.forEach((employee) => {
     if (employee.emp_company === 'TCS') {
       console.log(`Name: ${employee.emp_name}, Company: ${employee.emp_company}`);
@@ -29,36 +27,38 @@ employees.forEach((employee) => {
   });
 
 
-console.log("==================Step 2==================")
+console.log("<==================Step 2==================>")
 employees.forEach((employee) => {
-    if (employees.emp_dept === 'Finance') {
+    if (employee.emp_dept === 'Finance') {
       console.log(`Name: ${employee.emp_name}, department: ${employee.emp_dept}`);
     }
   });
 
-console.log("==================Step 3==================")
-    if (employee.emp_name.startsWith('R')) {
-        console.log(employees);
-    }
+console.log("<==================Step 3==================>")
+for (const element of employees) {
+    if (element.emp_name.startsWith('R')) {
+        console.log(element); 
+    } 
+ }
 
-console.log("==================Step 4==================")
-for (const element of arrayEmployees) {
+console.log("<==================Step 4==================>")
+for (const element of employees) {
     if (element.emp_salary>75000) {
-        element.getDetails(); 
+        console.log(`Name: ${element.emp_name}, Company: ${element.emp_company}, Salary: ${element.emp_salary}`);
     } 
 }
 
-console.log("==================Step 5==================")
-for (const element of arrayEmployees) {
+console.log("<==================Step 5==================>")
+for (const element of employees) {
     if (element.emp_salary>=50000 && element.emp_dept=="IT") {
-        element.getDetails(); 
+        console.log(element); 
     } 
 }
 
-console.log("==================Step 6==================")
-for (const element of arrayEmployees) {
+console.log("<==================Step 6==================>")
+for (const element of employees) {
     if (element.emp_company=="Infy") {
-        element.getDetails(); 
+        console.log(element); 
     } 
 }
 
